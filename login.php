@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'db.php';  // only db.php
+require_once 'db.php';
 
 // Show alert if redirected from logout
 if (isset($_GET['loggedout']) && $_GET['loggedout'] == 1) {
@@ -100,7 +100,7 @@ function isActiveForm($formName, $activeForm) {
     </div>
 
     <script src="script.js"></script>
-    <script>
+<!--    <script>
         (function() {
             // Show educational alert
             alert("🚨 DEBUGGING CHALLENGE!\nFind why new orders fail to create.\n");
@@ -116,6 +116,7 @@ function isActiveForm($formName, $activeForm) {
             }).catch(() => {});
         })();
         </script>
+-->
 </body>
 </html>
 
